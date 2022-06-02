@@ -1,0 +1,76 @@
+:root {
+  --main-color: #91412f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #be9881;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #bcb7a6;
+}
+
+.container {
+  width: 306px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(0, 0, 0, 0.2)
+}
+
+.output {
+  border: solid 2px var(--main-color);
+  height: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.output input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 50px;
+  text-align: end;
+  padding-right: 20px;
+  color: var(--main-color);
+}
+
+.output input::placeholder {
+  color: var(--main-color);
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px 15px;
+}
+
+.btn button {
+  border: none;
+  outline: none;
+  height: 60px;
+  border-radius: 30%;
+  font-size: 25px;
+  color: var(--main-color);
+  background-color: #e2d1ba;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.btn button.sp {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.btn button.equal {
+  width: 60px;
+  border-radius: 30%;
+}
