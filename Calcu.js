@@ -23,7 +23,7 @@ function del() {
   }
 }
 
-//This function is for the equal ,this will get the answer of the calcu
+//This function is for the equal. this will get the answer of the calcu
 function calcu() {
   try {
   outText.value = eval(outText.value);
